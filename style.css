@@ -87,29 +87,8 @@ p {
 }
 
 
-/* .image-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.image-links a {
-  text-decoration: none;
-  text-align: center;
-  background-color: #fff8dc;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  width: 180px; 
-}
-
-.image-links a:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
-} */
+/* 
+ */
 
 .image-links img {
   width: 150px;
@@ -123,6 +102,25 @@ p {
   color: #ff6699;
   margin-top: 10px;
 }
+
+footer a {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6699, #66ccff);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-family: 'Baloo 2', cursive;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+}
+
 
 /* 📱 Responsive Design for Small Screens */
 @media (max-width: 768px) {
@@ -149,7 +147,7 @@ p {
 /* 📱 Extra Small Screens (phones under 480px) */
 @media (max-width: 480px) {
   .image-links a {
-    width: 90%;                 /* almost full width */
+    width: 90%;                 
     padding: 15px;
   }
 
@@ -249,3 +247,84 @@ p {
     padding: 10px 20px;
   }
 }
+
+
+/* Alphabets */
+
+/* Alphabets grid */
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+.letter-card {
+  background: #fff8dc;
+  border-radius: 18px;
+  padding: 12px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.letter-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.18);
+}
+
+.letter {
+  font-family: 'Baloo 2', cursive;
+  font-size: 36px;
+  color: white;
+  background: linear-gradient(45deg,#ff6699,#66ccff);
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
+
+.letter-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 6px auto;
+}
+
+.caption {
+  font-family: 'Baloo 2', cursive;
+  color: #ff6699;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+/* Responsive smaller screens */
+@media (max-width: 480px) {
+  .alphabet-grid {
+    gap: 12px;
+  }
+  .letter-card {
+    width: 100px;
+    padding: 10px;
+  }
+  .letter {
+    font-size: 30px;
+    width: 56px;
+    height: 56px;
+  }
+  .letter-card img { width: 56px; height: 56px; }
+  .caption { font-size: 14px; }
+}
+
+
+
